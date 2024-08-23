@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>Kalkulator Sederhana</h1>
+      <div class="input-container">
+        <input type="text" id="input1" placeholder="Angka pertama" />
+        <input type="text" id="input2" placeholder="Angka kedua" />
+      </div>
+      <div class="button-container">
+        <button class="operator" id="tambah" onclick="hitung('+')">+</button>
+        <button class="operator" id="kurang" onclick="hitung('-')">-</button>
+        <button class="operator" id="bagi" onclick="hitung('/')">/</button>
+        <button class="operator" id="kali" onclick="hitung('*')">*</button>
+        <button id="reset" onclick="reset()">R</button>
+      </div>
+      <div class="hasil-container">
+        <label for="hasil">Hasil:</label>
+        <input type="text" id="hasil" readonly />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
